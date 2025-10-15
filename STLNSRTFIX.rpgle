@@ -18,7 +18,7 @@
      C                   Z-ADD     1             ARR(5)
      C                   Z-ADD     6             ARR(6)
      C                   CALLP     STALIN_SORT(ARR : SIZE)
-     C                   EVAl      MSG = MSG + %CHAR(SIZE)
+     C                   EVAL      MSG = MSG + %CHAR(SIZE)
      C     MSG           DSPLY
      C                   FOR       I = 1 TO SIZE
      C     ARR(I)        DSPLY
@@ -51,4 +51,5 @@
      C                   ENDFOR
      C                   Z-ADD     NEWSIZE       SIZE
      C                   RETURN
+
      PSTALIN_SORT      E
