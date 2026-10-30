@@ -15,7 +15,7 @@ public:
                   QSN_SA_NORM, QSN_SA_BLU, QSN_SA_NORM, NULL, 0, NULL);
     }
 
-    bool pressedF(unsigned short fkey) {
+    bool pressedF03() {
         unsigned char aid_code;
         QsnGetAID(&aid_code, 0, NULL);
         return aid_code == QSN_F3;
@@ -32,9 +32,9 @@ int main() {
 
     screen.showText("Hello, press F3 to proceed", 5, 10);
 
-    while (!screen.pressedF(3)) {}
+    while (!screen.pressedF03()) {}
 
     screen.showText("Press F3 again to quit", 6, 10);
 
-    while (!screen.pressedF(3)) {}
+    while (!screen.pressedF03()) {}
 }
